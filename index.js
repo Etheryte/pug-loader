@@ -138,6 +138,7 @@ module.exports = function(source) {
 				doctype: query.doctype || "html",
 				pretty: query.pretty,
 				self: query.self,
+				basedir: query.root,
 				compileDebug: loaderContext.debug || false,
 				globals: ["require"].concat(query.globals || []),
 				name: "template",
